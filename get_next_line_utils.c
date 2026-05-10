@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   get_next_line_utils.c                              :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: apolguil <apolguil@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/05/10 16:08:58 by apolguil          #+#    #+#             */
+/*   Updated: 2026/05/10 16:08:59 by apolguil         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "get_next_line.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
@@ -9,11 +21,10 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	i = 0;
 	j = 0;
-
 	if (!s2)
-    return (NULL);
-    if (!s1)
-    return (ft_strdup(s2));
+		return (NULL);
+	if (!s1)
+		return (ft_strdup(s2));
 	len = ft_strlen((char *)s1) + ft_strlen((char *)s2);
 	cat = malloc(sizeof(char) * (len + 1));
 	if (!cat)
